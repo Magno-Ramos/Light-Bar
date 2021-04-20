@@ -54,6 +54,8 @@ class LightBar @JvmOverloads constructor(
     }
 
     private fun onClickItem(view: View) {
+        if (view.id == mSelectedView?.id) return
+
         TransitionManager.beginDelayedTransition(this@LightBar)
         moveLampToView(view, lampView)
         view.lighten()
