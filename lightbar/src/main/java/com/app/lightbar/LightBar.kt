@@ -80,6 +80,6 @@ class LightBar @JvmOverloads constructor(
     }
 
     private fun View.lighten() {
-        this.alpha = 0.6f
+        this.alpha = 1f
     }
 }
